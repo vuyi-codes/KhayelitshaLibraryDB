@@ -27,6 +27,7 @@ namespace KhayelitshaLibraryApp
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblProjectName = new System.Windows.Forms.Label();
             this.lblSubtitle = new System.Windows.Forms.Label();
+            this.lblLearnerDetails = new System.Windows.Forms.Label();
             this.btnMembers = new System.Windows.Forms.Button();
             this.btnBooks = new System.Windows.Forms.Button();
             this.btnLoans = new System.Windows.Forms.Button();
@@ -125,6 +126,17 @@ namespace KhayelitshaLibraryApp
             this.lblSubtitle.Text = "MDB622 Formative Assessment 2 Project";
             this.lblSubtitle.Click += new System.EventHandler(this.lblSubtitle_Click);
             // 
+            // lblLearnerDetails
+            // 
+            this.lblLearnerDetails.AutoSize = true;
+            this.lblLearnerDetails.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblLearnerDetails.ForeColor = System.Drawing.Color.White;
+            this.lblLearnerDetails.Location = new System.Drawing.Point(34, 88);
+            this.lblLearnerDetails.Name = "lblLearnerDetails";
+            this.lblLearnerDetails.Size = new System.Drawing.Size(420, 40);
+            this.lblLearnerDetails.TabIndex = 2;
+            this.lblLearnerDetails.Text = "Name: Vuyisile Nqono\r\nStudent Number: 20240466";
+            // 
             // btnMembers
             // 
             this.btnMembers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(90)))), ((int)(((byte)(140)))));
@@ -203,6 +215,7 @@ namespace KhayelitshaLibraryApp
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(55)))), ((int)(((byte)(95)))));
+            this.pnlHeader.Controls.Add(this.lblLearnerDetails);
             this.pnlHeader.Controls.Add(this.lblSubtitle);
             this.pnlHeader.Controls.Add(this.lblProjectName);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -254,6 +267,7 @@ namespace KhayelitshaLibraryApp
         private System.Windows.Forms.Panel pnlHeader;
         private System.Windows.Forms.Label lblProjectName;
         private System.Windows.Forms.Label lblSubtitle;
+        private System.Windows.Forms.Label lblLearnerDetails;
         private System.Windows.Forms.Button btnMembers;
         private System.Windows.Forms.Button btnBooks;
         private System.Windows.Forms.Button btnLoans;
